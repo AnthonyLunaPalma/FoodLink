@@ -1,0 +1,25 @@
+        
+        <link rel="stylesheet" href="../CSS/iniciodesesion.css">
+        <section class="vista oculto" id="seccion-login">
+            <h2 class="titulo-seccion" id="titulo-login">Bienvenido de vuelta</h2>
+            <form class="formulario" id="form-login" novalidate>
+                <div class="grupo-campo">
+                    <label for="login-cuenta" class="etiqueta">Cuenta</label>
+                    <input type="text" class="campo" id="login-cuenta" name="cuenta" maxlength="45" placeholder="Tu nombre de cuenta">
+                    <span class="mensaje-error" id="error-login-cuenta"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="login-contrasena" class="etiqueta">Contraseña</label>
+                    <input type="password" class="campo" id="login-contrasena" name="contrasena" maxlength="45" placeholder="Tu contraseña">
+                    <span class="mensaje-error" id="error-login-contrasena"></span>
+                </div>
+                <p class="mensaje-general" id="mensaje-login"></p>
+                <button type="submit" class="boton-principal" id="btn-login-enviar"><b>Iniciar sesión</b></button>
+                <p class="texto-enlace">¿No tienes cuenta?
+                    <a href="../HTML/registro.html" id="enlace"><button type="button" id="btn-login-a-registro">Regístrate</button></a>
+                </p>
+            </form>
+            <a href="../HTML/index.html"><button type="button" id="boton-regresar-index"><b>Volver</b></button></a>
+        </section>
+    </main>
+    <script src="../src/iniciarSesion.js"></script>

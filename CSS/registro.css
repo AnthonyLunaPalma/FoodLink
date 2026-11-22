@@ -1,0 +1,154 @@
+/* ===== registro-claro.css (TEMA CLARO) — Vista #seccion-registro ===== */
+:root {
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-code: 'Cascadia Code', Consolas, 'Roboto Mono', 'Courier New', monospace;
+  --radio: 6px;
+  --radio-grande: 8px;
+  --ancho-contenido: 1100px;
+}
+
+body{
+  font-family: var(--font-ui);
+}
+
+#seccion-registro {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#seccion-registro .formulario {
+  background-color: #ffffff;
+  border: 1px solid #f2d3b3;
+  border-radius: 8px;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+#seccion-registro .grupo-campo { display: flex; flex-direction: column; gap: 0.35rem; }
+
+#seccion-registro .etiqueta { font-size: 0.95rem; font-weight: 600; color: #2b0a10; }
+
+#seccion-registro .campo {
+  width: 100%;
+  background-color: #ffffff;
+  color: #2b0a10;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #d9a679;
+  border-radius: 6px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+#seccion-registro .campo::placeholder { color: #8a7a7a; }
+#seccion-registro .campo:hover { border-color: #e85d04; }
+#seccion-registro .campo:focus {
+  outline: none;
+  border-color: #e85d04;
+  box-shadow: 0 0 0 3px rgba(232, 93, 4, 0.25);
+}
+#seccion-registro .campo:focus-visible { outline: 3px solid #e85d04; outline-offset: 2px; }
+#seccion-registro .campo.invalido { border-color: #c92a2a; }
+
+#seccion-registro .mensaje-error {
+  min-height: 1.1em;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  color: #c92a2a;
+}
+#seccion-registro .mensaje-general.error { color: #c92a2a; }
+#seccion-registro .mensaje-general.exito { color: #2b8a3e; }
+
+#seccion-registro { width: 100%; }
+
+#btn-registro-enviar {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-align: center;
+  padding:10px;
+  background-color: #ffba08;
+  color: #03071e;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+}
+
+#btn-registro-enviar:hover {
+  background-color: #faa307;
+  color: #03071e;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.texto-enlace {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #ffba08; /* Color de fondo (ej. azul) */
+  color: #03071e;            /* Color del texto */
+  border: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.2s;
+}
+
+/* Efecto al pasar el cursor por encima */
+input[type="file"]::file-selector-button:hover {
+  background-color: #faa307; /* Color de fondo al pasar el cursor (ej. azul más oscuro) */
+}
+
+#btn-registro-a-login{
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffba08;
+  background-color: #ffffff;
+  text-decoration: none;
+  border-color: #ffba08;
+  border-radius: 30px;
+  border: 2px solid #ffba08;
+  padding: 10px;
+}
+
+#btn-registro-a-login:hover{
+  background-color: #faa307;
+  text-decoration: none;
+  border-color: #faa307;
+  color: #03071e;
+  border-radius: 30px;
+  border: 2px solid #faa307;
+  padding: 10px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#boton-regresar-index {
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-align: center;
+  padding:10px;
+  background-color: #ffba08;
+  color: #03071e;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+}
+
+#boton-regresar-index:hover {
+  background-color: #faa307;
+  color: #03071e;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}

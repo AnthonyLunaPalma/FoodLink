@@ -1,0 +1,53 @@
+        <link rel="stylesheet" href="../CSS/registro.css">
+        <section class="vista oculto" id="seccion-registro">
+            <h2 class="titulo-seccion" id="titulo-registro">Crear cuenta</h2>
+            <form class="formulario" id="form-registro" novalidate>
+                <div class="grupo-campo">
+                    <label for="registro-rol" class="etiqueta">Rol</label>
+                    <select class="campo" id="registro-rol" name="rol">
+                        <option value="">Selecciona un rol</option>
+                        <option value="Donador">Donador</option>
+                        <option value="Receptor">Receptor</option>
+                        <option value="Voluntario">Voluntario</option>
+                    </select>
+                    <span class="mensaje-error" id="error-registro-rol"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="registro-nombre" class="etiqueta">Nombre completo o razón social</label>
+                    <input type="text" class="campo" id="registro-nombre" name="nombre" maxlength="45">
+                    <span class="mensaje-error" id="error-registro-nombre"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="registro-correo" class="etiqueta">Correo electronico</label>
+                    <input type="email" class="campo" id="registro-correo" name="correo" maxlength="50">
+                    <span class="mensaje-error" id="error-registro-correo"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="registro-cuenta" class="etiqueta">Cuenta (nombre de usuario)</label>
+                    <input type="text" class="campo" id="registro-cuenta" name="cuenta" maxlength="45">
+                    <span class="mensaje-error" id="error-registro-cuenta"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="registro-contrasena" class="etiqueta">Contraseña (mínimo 8 caracteres)</label>
+                    <input type="password" class="campo" id="registro-contrasena" name="contrasena" maxlength="45">
+                    <span class="mensaje-error" id="error-registro-contrasena"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="registro-confirmar" class="etiqueta">Confirmar contraseña</label>
+                    <input type="password" class="campo" id="registro-confirmar" name="confirmar" maxlength="45">
+                    <span class="mensaje-error" id="error-registro-confirmar"></span>
+                </div>
+                <div class="grupo-campo">
+                    <label for="registro-documentos" class="etiqueta">Documentos oficiales (PDF, JPG o PNG, máx. 5 MB)</label>
+                    <input type="file" class="campo" id="registro-documentos" name="documentos" accept=".pdf,.jpg,.jpeg,.png" multiple>
+                    <span class="mensaje-error" id="error-registro-documentos"></span>
+                </div>
+                <p class="mensaje-general" id="mensaje-registro"></p>
+                <button type="submit" class="boton-principal" id="btn-registro-enviar"><b>Registrarme</b></button>
+                <p class="texto-enlace">¿Ya tienes cuenta?
+                    <a href="../HTML/iniciosesion.html"><button type="button" class="boton-enlace" id="btn-registro-a-login"><b> Iniciarsesión</b></button></a>
+                </p>
+            </form>
+            <a href="../HTML/index.html"><button type="button" class="boton-principal" id="boton-regresar-index"><b>Volver</b></button></a>
+        </section>
+        <script src="../src/registro.js"></script>

@@ -1,4 +1,4 @@
-const pool = require('../DB_Localhost');
+const pool = require('../DB/DB_Localhost');
 
 const COLUMNAS_PUBLICAS = 'idpedidos, descripcion, caducidad, evaluador, status_idstatus, tipos_idtipos';
 
